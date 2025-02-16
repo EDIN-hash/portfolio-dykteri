@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фото Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Портфолио Фотографа</h1>
+        <nav>
+            <a href="gallery.html">Галерея</a>
+            <a href="mailto:photographer@email.com">Контакты</a>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <!-- 8 фото -->
+        <img src="images/photo1.jpg" class="lightbox-trigger">
+        <img src="images/photo2.jpg" class="lightbox-trigger">
+        <img src="images/photo3.jpg" class="lightbox-trigger">
+        <img src="images/photo4.jpg" class="lightbox-trigger">
+        <img src="images/photo5.jpg" class="lightbox-trigger">
+        <img src="images/photo6.jpg" class="lightbox-trigger">
+        <img src="images/photo7.jpg" class="lightbox-trigger">
+        <img src="images/photo8.jpg" class="lightbox-trigger">
+    </section>
+
+    <!-- Лайтбокс -->
+    <div id="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+    <form id="upload-form">
+        <input type="file" id="file-input" accept="image/*">
+        <button type="submit">Загрузить фото</button>
+    </form>
+    
+</body>
+</html>

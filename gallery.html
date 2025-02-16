@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Галерея</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="mailto:photographer@email.com">Контакты</a>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <!-- Можно добавить API -->
+        <img src="images/photo9.jpg" class="lightbox-trigger">
+        <img src="images/photo10.jpg" class="lightbox-trigger">
+        <img src="images/photo11.jpg" class="lightbox-trigger">
+        <img src="images/photo12.jpg" class="lightbox-trigger">
+        <img src="images/photo13.jpg" class="lightbox-trigger">
+        <img src="images/photo14.jpg" class="lightbox-trigger">
+    </section>
+
+    <div id="lightbox">
+        <span class="close">&times;</span>
+        <img id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
